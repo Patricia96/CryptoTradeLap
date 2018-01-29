@@ -1,0 +1,51 @@
+﻿
+/*/*#region Layout */
+
+.jumbotron {
+    background-image: url('../Image/header-bg.jpg');
+    background-size: cover;
+    height: 530px;
+}
+
+h2 {
+    color: #FF6F00;
+}
+
+.navbar-brand {
+    color: black !important
+}
+
+    .navbar-brand:visited {
+        color: #FF6F00 !important
+    }
+
+.navbar-default-color {
+    color: black !important
+}
+
+.navbar-inverse {
+    color: #FFFFFF !important
+}
+
+.nav > li > a {
+    color: #FF6F00 !important
+}
+
+footer {
+    background-color: #0B5FA5 !important;
+}
+
+p {
+    color: black !important;
+}
+
+i {
+    margin-top: 20px;
+    margin-left: 220px;
+}
+
+.abstand {
+    margin-left: 50px;
+    margin-right: 50px;
+}
+/*#endregion Layout */ */
