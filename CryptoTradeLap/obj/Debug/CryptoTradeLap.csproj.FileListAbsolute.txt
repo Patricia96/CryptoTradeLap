@@ -52,3 +52,5 @@ C:\Users\Patricia\source\repos\CryptoTradeLap\CryptoTradeLap\obj\Debug\CryptoTra
 C:\Users\Patricia\source\repos\CryptoTradeLap\CryptoTradeLap\obj\Debug\CryptoTradeLap.csproj.CoreCompileInputs.cache
 C:\Users\Patricia\source\repos\CryptoTradeLap\CryptoTradeLap\obj\Debug\CryptoTradeLap.dll
 C:\Users\Patricia\source\repos\CryptoTradeLap\CryptoTradeLap\obj\Debug\CryptoTradeLap.pdb
+C:\Users\Patricia\source\repos\CryptoTradeLap\CryptoTradeLap\bin\Jayrock.Json.dll
+C:\Users\Patricia\source\repos\CryptoTradeLap\CryptoTradeLap\bin\de\EntityFramework.SqlServer.resources.dll

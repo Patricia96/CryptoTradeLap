@@ -1,0 +1,77 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title - CryptoTrade</title>
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/modernizr")
+</head>
+<body>
+    <div class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                @Html.ActionLink("CryptoTrade", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })
+            </div>
+            <div class="navbar-collapse collapse">
+                <ul class="nav navbar-nav">
+                    <li>@Html.ActionLink("Guthaben", "Index", "Home")</li>
+                    <li>@Html.ActionLink("Verkauf", "About", "Home")</li>
+                    <li>@Html.ActionLink("Admin", "LayoutAdmin", "Shared")</li>
+                   
+                    
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="jumbotron">
+        <div></div>
+        <h1></h1>
+    </div>
+    <div class="container body-content">
+        @RenderBody()
+        <hr />
+        <footer>
+            <div class="row">
+                <div class="col-md-6">
+                    <i class="fa fa-repeat fa-5x" aria-hidden="true"></i>
+                    <h2 class="abstand">Komfort rund um die Uhr</h2>
+                    <p class="abstand">
+                        Durch starke API-Anbindungen, der Verwendung modernster Servertechnik und
+                        vollautomatisierten Bestellsytemen in Echtzeit,
+                        ist es uns möglich dir zu jederzeit eine zuverlässige und schnelle Umgebung für deine
+                        Bestellungen zu garantieren.
+
+                    </p>
+
+                </div>
+                <div class="col-md-6">
+                    <i class="fa fa-clock-o fa-5x" aria-hidden="true"></i>
+                    <h2 class="abstand">Bestelle auf der Überholspur</h2>
+                    <p class="abstand">
+                        CryptoTade wurde in einer aufwändigen Konzeptionierungsphase so gestaltet,
+                        dass wir den derzeit einfachsten Zugang zu Bitcoin anbieten können.
+                        Mit CryptoTrade bestellst du Bitcoins in weniger als 2 Minuten.
+                    </p>
+                </div>
+
+            </div>
+            <p>&copy; @DateTime.Now.Year - Meine CryptoTrade</p>
+        </footer>
+    </div>
+
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/bootstrap")
+    @RenderSection("scripts", required: false)
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+
+</body>
+
+</html>
+
