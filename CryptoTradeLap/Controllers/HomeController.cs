@@ -14,6 +14,7 @@ namespace CryptoTradeLap.Controllers
         public ActionResult Index()
         {
             return View();
+
         }
 
         public ActionResult Access()
