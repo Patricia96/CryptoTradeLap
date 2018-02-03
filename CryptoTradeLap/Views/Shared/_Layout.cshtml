@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>@ViewBag.Title - CryptoTrade</title>
     @Styles.Render("~/Content/css")
+    <link href="~/Content/Layout.css" rel="stylesheet" />
     @Scripts.Render("~/bundles/modernizr")
 </head>
 <body>
@@ -21,9 +22,9 @@
             </div>
             <div class="navbar-collapse collapse">
                 <ul class="nav navbar-nav">
-                    <li>@Html.ActionLink("Guthaben", "Index", "Home")</li>
+                    @*<li>@Html.ActionLink("Guthaben", "Index", "Home")</li>
                     <li>@Html.ActionLink("Verkauf", "About", "Home")</li>
-                    <li>@Html.ActionLink("Kauf", "Contact", "Home")</li>
+                    <li>@Html.ActionLink("Kauf", "Contact", "Home")</li>*@
                     <li>@Html.ActionLink("Registrieren", "Register", "Register")</li>
                     <li>@Html.ActionLink("Login", "Login", "Login")</li>
                 </ul>
