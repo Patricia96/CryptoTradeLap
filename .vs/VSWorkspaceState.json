@@ -1,7 +1,10 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\CryptoTradeLap",
+    "\\CryptoTradeLap\\Views",
+    "\\CryptoTradeLap\\Views\\Shared"
   ],
-  "SelectedNode": "\\CryptoTradeLap.sln",
+  "SelectedNode": "\\CryptoTradeLap\\Views\\Shared\\_LayoutUser.cshtml",
   "PreviewInSolutionExplorer": false
 }
