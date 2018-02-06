@@ -102,7 +102,7 @@ C:\Users\Patricia\source\repos\CryptoTradeLap\CryptoTradeLap\bin\de\System.Web.R
 C:\Users\Patricia\source\repos\CryptoTradeLap\CryptoTradeLap\bin\de\System.Web.WebPages.resources.dll
 C:\Users\Patricia\source\repos\CryptoTradeLap\CryptoTradeLap\bin\de\System.Web.WebPages.Deployment.resources.dll
 C:\Users\Patricia\source\repos\CryptoTradeLap\CryptoTradeLap\bin\de\System.Web.WebPages.Razor.resources.dll
-C:\Users\Patricia\source\repos\CryptoTradeLap\CryptoTradeLap\obj\Debug\CryptoTradeLap.csprojResolveAssemblyReference.cache
 C:\Users\Patricia\source\repos\CryptoTradeLap\CryptoTradeLap\obj\Debug\CryptoTradeLap.csproj.CoreCompileInputs.cache
 C:\Users\Patricia\source\repos\CryptoTradeLap\CryptoTradeLap\obj\Debug\CryptoTradeLap.dll
 C:\Users\Patricia\source\repos\CryptoTradeLap\CryptoTradeLap\obj\Debug\CryptoTradeLap.pdb
+C:\Users\Patricia\source\repos\CryptoTradeLap\CryptoTradeLap\obj\Debug\CryptoTradeLap.csprojResolveAssemblyReference.cache

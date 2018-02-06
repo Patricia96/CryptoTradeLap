@@ -2,12 +2,15 @@
 
     if (User.Identity.IsAuthenticated)
     {
-
-        Layout = "~/Views/Shared/_Layout.cshtml";
-
-        Layout = "~/Views/Shared/_Layout.cshtml";
+        if (User.IsInRole("0"))
+        {
+            Layout = "~/Views/Shared/_LayoutUser.cshtml";
+        }
+        else
+        {
+            Layout = "~/Views/Shared/_LayoutAdmin.cshtml";
+        }
 
     }
-    Layout = "~/Views/Shared/_LayoutUser.cshtml";
-
+    Layout = "~/Views/Shared/_Layout.cshtml";
 }

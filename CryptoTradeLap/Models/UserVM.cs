@@ -13,6 +13,6 @@ namespace CryptoTradeLap.Models
         public string firstname { get; set; }
         public string lastname { get; set; }
         public string salt { get; set; }
-
+        public decimal Role { get; set; }
     }
 }
