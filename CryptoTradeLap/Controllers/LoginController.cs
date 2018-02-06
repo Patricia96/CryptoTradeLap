@@ -19,23 +19,17 @@ namespace CryptoTradeLap.Controllers
 
         [AllowAnonymous]
         [HttpPost]
-        public ActionResult Login(string mail, string password)
+        public ActionResult Login(UserVM userInfo)
         {
-            string login = "";
+            bool result = Helper.Login.Login1(userInfo);
 
-            UserVM logInUser = new UserVM();
-            logInUser.email = mail;
-            logInUser.password = password;
-
-            Helper.Login.Login1(logInUser, ref login);
-
-            if (login == "true")
+            if (result)
             {
-                return RedirectToAction("Login", "Home");
+                return View("Index");
             }
             else
             {
-                return RedirectToAction("Error", "Home");
+                return View("Index");
             }
         }
     }

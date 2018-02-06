@@ -4,74 +4,128 @@
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>@ViewBag.Title - CryptoTrade</title>
+    <title>@ViewBag.Title - Meine ASP.NET-Anwendung</title>
     @Styles.Render("~/Content/css")
+    <link href="~/Content/LayoutUserAdmin.css" rel="stylesheet" />
     @Scripts.Render("~/bundles/modernizr")
 </head>
 <body>
-    <div class="navbar navbar-inverse navbar-fixed-top">
-        <div class="container">
+    <div id="throbber" style="display:none; min-height:120px;"></div>
+    <div id="noty-holder"></div>
+
+    <div id="wrapper">
+        <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
             <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+                    <span class="sr-only">Toggle navigation</span>
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                @Html.ActionLink("CryptoTrade", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })
+                @Html.ActionLink("KryptoTrade", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })
             </div>
-            <div class="navbar-collapse collapse">
-                <ul class="nav navbar-nav">
-                    <li>@Html.ActionLink("Guthaben", "Index", "Home")</li>
-                    <li>@Html.ActionLink("Verkauf", "About", "Home")</li>
-                    <li>@Html.ActionLink("Admin", "LayoutAdmin", "Shared")</li>
-                   
-                    
+
+            <!-- Top Menu Items -->
+            <ul class="nav navbar-right top-nav">
+                <li>
+                    <a href="#" data-placement="bottom" data-toggle="tooltip" @*href="#" data-original-title="Stats"*@>
+                        <i class="fa fa-bar-chart-o"></i>
+                    </a>
+                </li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Admin User <b class="fa fa-angle-down"></b></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#"><i class="fa fa-fw fa-user"></i> Edit Profile</a></li>
+                        <li><a href="#"><i class="fa fa-fw fa-cog"></i> Change Password</a></li>
+                        <li class="divider"></li>
+                        <li><a href="#"><i class="fa fa-fw fa-power-off"></i> Logout</a></li>
+                    </ul>
+                </li>
+            </ul>
+
+
+            <!-- Sidebar Menu Items - These collapse to the responsive navigation menu on small screens -->
+            <div class="collapse navbar-collapse navbar-ex1-collapse">
+                <ul class="nav navbar-nav side-nav">
+                    <li>
+                        <a href="#" data-toggle="collapse" data-target="#submenu-1"><i class="fa fa-fw fa-search"></i> MENU 1 <i class="fa fa-fw fa-angle-down pull-right"></i></a>
+                        <ul id="submenu-1" class="collapse">
+                            <li><a href="#"><i class="fa fa-angle-double-right"></i> SUBMENU 1.1</a></li>
+                            <li><a href="#"><i class="fa fa-angle-double-right"></i> SUBMENU 1.2</a></li>
+                            <li><a href="#"><i class="fa fa-angle-double-right"></i> SUBMENU 1.3</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#" data-toggle="collapse" data-target="#submenu-2"><i class="fa fa-fw fa-star"></i>  MENU 2 <i class="fa fa-fw fa-angle-down pull-right"></i></a>
+                        <ul id="submenu-2" class="collapse">
+                            <li><a href="#"><i class="fa fa-angle-double-right"></i> SUBMENU 2.1</a></li>
+                            <li><a href="#"><i class="fa fa-angle-double-right"></i> SUBMENU 2.2</a></li>
+                            <li><a href="#"><i class="fa fa-angle-double-right"></i> SUBMENU 2.3</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="investigaciones/favoritas"><i class="fa fa-fw fa-user-plus"></i>  MENU 3</a>
+                    </li>
+                    <li>
+                        <a href="sugerencias"><i class="fa fa-fw fa-paper-plane-o"></i> MENU 4</a>
+                    </li>
+                    <li>
+                        <a href="faq"><i class="fa fa-fw fa fa-question-circle"></i> MENU 5</a>
+                    </li>
                 </ul>
             </div>
-        </div>
-    </div>
-    <div class="jumbotron">
-        <div></div>
-        <h1></h1>
-    </div>
-    <div class="container body-content">
-        @RenderBody()
-        <hr />
-        <footer>
-            <div class="row">
-                <div class="col-md-6">
-                    <i class="fa fa-repeat fa-5x" aria-hidden="true"></i>
-                    <h2 class="abstand">Komfort rund um die Uhr</h2>
-                    <p class="abstand">
-                        Durch starke API-Anbindungen, der Verwendung modernster Servertechnik und
-                        vollautomatisierten Bestellsytemen in Echtzeit,
-                        ist es uns möglich dir zu jederzeit eine zuverlässige und schnelle Umgebung für deine
-                        Bestellungen zu garantieren.
+            <!-- /.navbar-collapse -->
+        </nav>
 
-                    </p>
-
+        <div id="page-wrapper">
+            <div class="container-fluid">
+                <!-- Page Heading -->
+                <div class="row" id="main">
+                    <div class="col-sm-12 col-md-12 well" id="content">
+                        <h1>Welcome Admin!</h1>
+                    </div>
                 </div>
-                <div class="col-md-6">
-                    <i class="fa fa-clock-o fa-5x" aria-hidden="true"></i>
-                    <h2 class="abstand">Bestelle auf der Überholspur</h2>
-                    <p class="abstand">
-                        CryptoTade wurde in einer aufwändigen Konzeptionierungsphase so gestaltet,
-                        dass wir den derzeit einfachsten Zugang zu Bitcoin anbieten können.
-                        Mit CryptoTrade bestellst du Bitcoins in weniger als 2 Minuten.
-                    </p>
-                </div>
-
+                <!-- /.row -->
             </div>
-            <p>&copy; @DateTime.Now.Year - Meine CryptoTrade</p>
-        </footer>
+            @RenderBody()
+            <hr />
+            <footer>
+                <div class="row">
+                    <div class="col-md-6">
+                        <i class="fa fa-repeat fa-5x" aria-hidden="true"></i>
+                        <h2 class="abstand">Komfort rund um die Uhr</h2>
+                        <p class="abstand">
+                            Durch starke API-Anbindungen, der Verwendung modernster Servertechnik und
+                            vollautomatisierten Bestellsytemen in Echtzeit,
+                            ist es uns möglich dir zu jederzeit eine zuverlässige und schnelle Umgebung für deine
+                            Bestellungen zu garantieren.
+
+                        </p>
+
+                    </div>
+                    <div class="col-md-6">
+                        <i class="fa fa-clock-o fa-5x" aria-hidden="true"></i>
+                        <h2 class="abstand">Bestelle auf der Überholspur</h2>
+                        <p class="abstand">
+                            CryptoTade wurde in einer aufwändigen Konzeptionierungsphase so gestaltet,
+                            dass wir den derzeit einfachsten Zugang zu Bitcoin anbieten können.
+                            Mit CryptoTrade bestellst du Bitcoins in weniger als 2 Minuten.
+                        </p>
+                    </div>
+
+                </div>
+                <p>&copy; @DateTime.Now.Year - Meine ASP.NET-Anwendung</p>
+            </footer>
+            <!-- /.container-fluid -->
+        </div>
+        <!-- /#page-wrapper -->
     </div>
+    <!-- /#wrapper -->
 
     @Scripts.Render("~/bundles/jquery")
     @Scripts.Render("~/bundles/bootstrap")
     @RenderSection("scripts", required: false)
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
-
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
 </body>
-
 </html>
 

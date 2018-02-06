@@ -17,25 +17,16 @@ namespace CryptoTradeLap.Controllers
 
         }
 
-        public ActionResult Access()
-        {
-            return View();
-        }
-
-        public ActionResult LogedIn()
-        {
-            return View();
-        }
-
-        public ActionResult Error()
-        {
-            return View();
-        }
+        public ActionResult Error() => View();
 
         public ActionResult Logout()
         {
             FormsAuthentication.SignOut();
             return RedirectToAction("Index", "Home");
+        }
+        public ActionResult Access()
+        {
+            return View();
         }
     }
 }
