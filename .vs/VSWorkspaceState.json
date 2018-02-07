@@ -1,6 +1,9 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\CryptoTradeLap",
+    "\\CryptoTradeLap\\Models"
   ],
+  "SelectedNode": "\\CryptoTradeLap\\Models\\UserVM.cs",
   "PreviewInSolutionExplorer": false
 }

@@ -160,6 +160,7 @@
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\RegisterController.cs" />
     <Compile Include="Controllers\LoginController.cs" />
+    <Compile Include="Controllers\VerifizierungsController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -199,6 +200,12 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>CryptoTrader.edmx</DependentUpon>
     </Compile>
+    <Compile Include="Models\sp_helpdiagramdefinition_Result.cs">
+      <DependentUpon>CryptoTrader.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\sp_helpdiagrams_Result.cs">
+      <DependentUpon>CryptoTrader.tt</DependentUpon>
+    </Compile>
     <Compile Include="Models\sysdiagrams.cs">
       <DependentUpon>CryptoTrader.tt</DependentUpon>
     </Compile>
@@ -215,6 +222,9 @@
       <DependentUpon>CryptoTrader.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\UserVM.cs" />
+    <Compile Include="Models\usp_verifizierung_Result.cs">
+      <DependentUpon>CryptoTrader.tt</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -315,6 +325,7 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+    <Folder Include="Views\Verifizierungs\" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
