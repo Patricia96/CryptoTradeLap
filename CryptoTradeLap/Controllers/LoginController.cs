@@ -31,6 +31,9 @@ namespace CryptoTradeLap.Controllers
             {
                 return View("Index");
             }
+
         }
+
+
     }
 }

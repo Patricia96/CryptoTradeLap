@@ -654,7 +654,7 @@
           <Property Type="String" Name="street" Nullable="false" MaxLength="128" />
           <Property Type="String" Name="numbers" Nullable="false" MaxLength="16" />
           <Property Type="String" Name="city" Nullable="false" MaxLength="64" />
-          <Property Type="String" Name="Country" Nullable="true" MaxLength="3" />
+          <Property Type="String" Name="Country" Nullable="true" MaxLength="128" />
           <Property Type="String" Name="upload" Nullable="true" MaxLength="64" />
         </ComplexType>
       </Schema>

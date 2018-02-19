@@ -28,5 +28,6 @@ namespace CryptoTradeLap.Controllers
         {
             return View();
         }
+       
     }
 }

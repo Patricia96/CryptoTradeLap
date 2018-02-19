@@ -186,10 +186,8 @@ C:\Users\Patricia\Source\Repos\original\CryptoTradeLap\bin\Antlr3.Runtime.pdb
 C:\Users\Patricia\Source\Repos\original\CryptoTradeLap\bin\EntityFramework.xml
 C:\Users\Patricia\Source\Repos\original\CryptoTradeLap\bin\EntityFramework.SqlServer.xml
 C:\Users\Patricia\Source\Repos\original\CryptoTradeLap\bin\Microsoft.AI.DependencyCollector.xml
-C:\Users\Patricia\Source\Repos\original\CryptoTradeLap\bin\Microsoft.AI.ServerTelemetryChannel.xml
 C:\Users\Patricia\Source\Repos\original\CryptoTradeLap\bin\Microsoft.AI.Web.xml
 C:\Users\Patricia\Source\Repos\original\CryptoTradeLap\bin\Microsoft.AI.WindowsServer.xml
-C:\Users\Patricia\Source\Repos\original\CryptoTradeLap\bin\Microsoft.ApplicationInsights.xml
 C:\Users\Patricia\Source\Repos\original\CryptoTradeLap\bin\Microsoft.AspNet.TelemetryCorrelation.xml
 C:\Users\Patricia\Source\Repos\original\CryptoTradeLap\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
 C:\Users\Patricia\Source\Repos\original\CryptoTradeLap\bin\Newtonsoft.Json.xml

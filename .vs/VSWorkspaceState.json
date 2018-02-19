@@ -2,8 +2,10 @@
   "ExpandedNodes": [
     "",
     "\\CryptoTradeLap",
+    "\\CryptoTradeLap\\Controllers",
+    "\\CryptoTradeLap\\Helper",
     "\\CryptoTradeLap\\Models"
   ],
-  "SelectedNode": "\\CryptoTradeLap\\Models\\UserVM.cs",
+  "SelectedNode": "\\CryptoTradeLap\\Models\\VerifiVM.cs",
   "PreviewInSolutionExplorer": false
 }
