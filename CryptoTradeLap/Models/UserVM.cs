@@ -11,7 +11,7 @@ namespace CryptoTradeLap.Models
        
 
         public int id { get; set; }
-        public DateTime created { get; set; } = DateTime.Now;
+        public DateTime Created { get; set; } = DateTime.Now;
 
         [DataType(DataType.EmailAddress)]
         public string email { get; set; }

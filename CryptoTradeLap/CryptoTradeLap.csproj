@@ -201,12 +201,6 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>CryptoTrader.edmx</DependentUpon>
     </Compile>
-    <Compile Include="Models\sp_helpdiagramdefinition_Result.cs">
-      <DependentUpon>CryptoTrader.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Models\sp_helpdiagrams_Result.cs">
-      <DependentUpon>CryptoTrader.tt</DependentUpon>
-    </Compile>
     <Compile Include="Models\sysdiagrams.cs">
       <DependentUpon>CryptoTrader.tt</DependentUpon>
     </Compile>
@@ -223,9 +217,6 @@
       <DependentUpon>CryptoTrader.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\UserVM.cs" />
-    <Compile Include="Models\usp_verifizierung_Result.cs">
-      <DependentUpon>CryptoTrader.tt</DependentUpon>
-    </Compile>
     <Compile Include="Models\VerifiVM.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -242,10 +233,10 @@
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
     <Content Include="Content\Site.css" />
-    <Content Include="Image\header-bg.jpg" />
     <Content Include="ApplicationInsights.config">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
+    <Content Include="Image\header-bg.jpg" />
     <Content Include="Models\CryptoTrader.Context.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
       <DependentUpon>CryptoTrader.edmx</DependentUpon>
@@ -269,6 +260,8 @@
     <Content Include="fonts\glyphicons-halflings-regular.woff" />
     <Content Include="fonts\glyphicons-halflings-regular.ttf" />
     <Content Include="fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="Content\toastr.scss" />
+    <Content Include="Content\toastr.less" />
     <EntityDeploy Include="Models\CryptoTrader.edmx">
       <Generator>EntityModelCodeGenerator</Generator>
       <LastGenOutput>CryptoTrader.Designer.cs</LastGenOutput>
@@ -276,8 +269,6 @@
     <Content Include="Models\CryptoTrader.edmx.diagram">
       <DependentUpon>CryptoTrader.edmx</DependentUpon>
     </Content>
-    <Content Include="Content\toastr.scss" />
-    <Content Include="Content\toastr.less" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Scripts\jquery-1.10.2.js" />
     <Content Include="Scripts\jquery-1.10.2.min.js" />
@@ -334,7 +325,7 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Image\upload\" />
+    <Folder Include="Content\upload\" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />

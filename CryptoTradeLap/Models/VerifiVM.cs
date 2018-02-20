@@ -11,13 +11,25 @@ namespace CryptoTradeLap.Models
     {
         //[Required]
         public int Id { get; set; }
-        public decimal status { get; set; }
-        public string street { get; set; }
-        public string numbers { get; set; }
-        public string city { get; set; }
+        public decimal Status { get; set; }
+
+        //[MinLength(7, ErrorMessage = "Ungültiges Starße")]
+        public string Street { get; set; }
+
+        //[MinLength(1, ErrorMessage = "Ungültige Nummer ")]
+        public string Numbers { get; set; }
+
+        //[MinLength(2, ErrorMessage = "Ungültige Stadt")]
+        public string City { get; set; }
+
+        //[MinLength(1, ErrorMessage = "Ungültiger Pass")]
         public HttpPostedFileBase Pass { get; set;   }
-        public string zip { get; set; }
-        public DateTime created { get; set; } = DateTime.Now;
+
+        //[MinLength(2, ErrorMessage = "Ungültiges Postleitzahl")]
+        public string Zip { get; set; }
+        public DateTime Created { get; set; } = DateTime.Now;
+
+       
         public string Country { get; set; }
         public List<SelectListItem> CountryList { get; set; }
 

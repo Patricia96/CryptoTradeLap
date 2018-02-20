@@ -4,8 +4,9 @@
     "\\CryptoTradeLap",
     "\\CryptoTradeLap\\Controllers",
     "\\CryptoTradeLap\\Helper",
-    "\\CryptoTradeLap\\Models"
+    "\\CryptoTradeLap\\Views",
+    "\\CryptoTradeLap\\Views\\Shared"
   ],
-  "SelectedNode": "\\CryptoTradeLap\\Models\\VerifiVM.cs",
+  "SelectedNode": "\\CryptoTradeLap\\Helper\\Register.cs",
   "PreviewInSolutionExplorer": false
 }
