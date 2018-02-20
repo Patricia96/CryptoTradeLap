@@ -35,9 +35,7 @@ namespace CryptoTradeLap.Helper
                         //     geeignet für die Verwendung in einem HTTP-Cookie enthält.
                         var encryptedTicket = FormsAuthentication.Encrypt(authTicket);
 
-
                         var authCookie = new HttpCookie(FormsAuthentication.FormsCookieName, encryptedTicket);
-
 
                         HttpContext.Current.Response.Cookies.Add(authCookie);
                         return true;

@@ -1,6 +1,12 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\CryptoTradeLap",
+    "\\CryptoTradeLap\\Controllers",
+    "\\CryptoTradeLap\\Helper",
+    "\\CryptoTradeLap\\Views",
+    "\\CryptoTradeLap\\Views\\Shared"
   ],
+  "SelectedNode": "\\CryptoTradeLap\\Helper\\Register.cs",
   "PreviewInSolutionExplorer": false
 }

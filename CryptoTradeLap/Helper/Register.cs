@@ -10,8 +10,11 @@ namespace CryptoTradeLap.Helper
 {
     public class Register
     {
+
         public static void Registrieren(UserVM user)
+                     
         {
+         
             User dbUser = new User();
             dbUser.firstname = user.firstname;
             dbUser.lastname = user.lastname;
@@ -33,9 +36,12 @@ namespace CryptoTradeLap.Helper
 
             //Datenbankverbindung aufgebaut
             using (var db = new CryptoTraderEntities())
+
             {
                 db.User.Add(dbUser); //User hinzufügen
                 db.SaveChanges(); //speichern in datenbank
+            
+
             }
 
             return;

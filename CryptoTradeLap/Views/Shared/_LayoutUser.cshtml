@@ -35,7 +35,7 @@
                 <li class="dropdown">
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown">User <b class="fa fa-angle-down"></b></a>
                     <ul class="dropdown-menu">
-                        <li><a href="#"><i class="fa fa-fw fa-user"></i> Edit Profile</a></li>
+                        
                         <li><a href="#"><i class="fa fa-fw fa-cog"></i> Change Password</a></li>
                         <li class="divider"></li>                
                         <li> @Html.ActionLink("Loguot", "Logout", "Home", new { area = "" }, new { @class = "fa fa-fw fa-power-off" })</li>
@@ -47,28 +47,14 @@
             <!-- Sidebar Menu Items - These collapse to the responsive navigation menu on small screens -->
             <div class="collapse navbar-collapse navbar-ex1-collapse">
                 <ul class="nav navbar-nav side-nav">
+
                     <li>
-                        <a href="#" data-toggle="collapse" data-target="#submenu-1"><i class="fa fa-fw fa-search"></i> MENU 1 <i class="fa fa-fw fa-angle-down pull-right"></i></a>
-                        <ul id="submenu-1" class="collapse">
-                            <li><a href="#"><i class="fa fa-angle-double-right"></i> SUBMENU 1.1</a></li>
-                            <li><a href="#"><i class="fa fa-angle-double-right"></i> SUBMENU 1.2</a></li>
-                            <li><a href="#"><i class="fa fa-angle-double-right"></i> SUBMENU 1.3</a></li>
-                        </ul>
+                        @Html.ActionLink("Verifizierung", "Verifizierung", "Verifizierungs", new { area = "" }, new { @class = "fa fa-fw fa-user-plus" })
                     </li>
-                    <li>
-                        <a href="#" data-toggle="collapse" data-target="#submenu-2"><i class="fa fa-fw fa-star"></i>  MENU 2 <i class="fa fa-fw fa-angle-down pull-right"></i></a>
-                        <ul id="submenu-2" class="collapse">
-                            <li><a href="#"><i class="fa fa-angle-double-right"></i> SUBMENU 2.1</a></li>
-                            <li><a href="#"><i class="fa fa-angle-double-right"></i> SUBMENU 2.2</a></li>
-                            <li><a href="#"><i class="fa fa-angle-double-right"></i> SUBMENU 2.3</a></li>
-                        </ul>
-                    </li>
-                    <li>
-                        <a href="investigaciones/favoritas"><i class="fa fa-fw fa-user-plus"></i>  MENU 3</a>
-                    </li>
-                    <li>
-                        <a href="sugerencias"><i class="fa fa-fw fa-paper-plane-o"></i> MENU 4</a>
-                    </li>
+                  <li>
+                    <a href="#"><i class="fa fa-fw fa-user"></i>Profil bearbeiten</a>
+                  </li>
+                    
                     <li>
                         <a href="faq"><i class="fa fa-fw fa fa-question-circle"></i> MENU 5</a>
                     </li>
@@ -90,30 +76,7 @@
             @RenderBody()
             <hr />
             <footer>
-                <div class="row">
-                    <div class="col-md-6">
-                        <i class="fa fa-repeat fa-5x" aria-hidden="true"></i>
-                        <h2 class="abstand">Komfort rund um die Uhr</h2>
-                        <p class="abstand">
-                            Durch starke API-Anbindungen, der Verwendung modernster Servertechnik und
-                            vollautomatisierten Bestellsytemen in Echtzeit,
-                            ist es uns möglich dir zu jederzeit eine zuverlässige und schnelle Umgebung für deine
-                            Bestellungen zu garantieren.
-
-                        </p>
-
-                    </div>
-                    <div class="col-md-6">
-                        <i class="fa fa-clock-o fa-5x" aria-hidden="true"></i>
-                        <h2 class="abstand">Bestelle auf der Überholspur</h2>
-                        <p class="abstand">
-                            CryptoTade wurde in einer aufwändigen Konzeptionierungsphase so gestaltet,
-                            dass wir den derzeit einfachsten Zugang zu Bitcoin anbieten können.
-                            Mit CryptoTrade bestellst du Bitcoins in weniger als 2 Minuten.
-                        </p>
-                    </div>
-
-                </div>
+              
                 <p>&copy; @DateTime.Now.Year - Meine ASP.NET-Anwendung</p>
             </footer>
             <!-- /.container-fluid -->
@@ -126,6 +89,8 @@
     @Scripts.Render("~/bundles/bootstrap")
     @RenderSection("scripts", required: false)
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
+
+
 </body>
 </html>
 
