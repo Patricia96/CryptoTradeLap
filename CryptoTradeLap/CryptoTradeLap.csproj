@@ -322,6 +322,7 @@
     <Content Include="Views\Login\Index.cshtml" />
     <Content Include="Views\Home\Access.cshtml" />
     <Content Include="Views\Verifizierungs\Verifizierung.cshtml" />
+    <Content Include="Views\Register\RegisterErfolgreich.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

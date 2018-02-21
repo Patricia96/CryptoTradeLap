@@ -13,8 +13,8 @@ namespace CryptoTradeLap.Controllers
 
         //Datenbank aufrufen
         private CryptoTraderEntities db = new CryptoTraderEntities();
-     
 
+     
         // GET: Verifizierungs
         public ActionResult Verifizierung()
         {
@@ -84,8 +84,8 @@ namespace CryptoTradeLap.Controllers
             if (ModelState.IsValid)
             {
 
-               
-                return RedirectToAction("Index","Verifizierungs");
+
+                return RedirectToAction("Verifizierung", "Verifizierungs");
             }
 
             return View();
